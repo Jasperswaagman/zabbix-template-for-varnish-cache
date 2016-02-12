@@ -47,7 +47,7 @@
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
-                    <params>100*last(&quot;varnish.stat[\&quot;MAIN.cache_hit\&quot;]&quot;)/(last(&quot;varnish.stat[\&quot;MAIN.cache_hit\&quot;]&quot;)+last(&quot;varnish.stat[\&quot;MAIN.cache_miss\&quot;]&quot;))</params>
+                    <params>100*last(varnish.stat[cache_hit])/(last(varnish.stat[cache_hit])+last(varnish.stat[cache_miss]))</params>
                     <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -72,7 +72,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_busy&quot;]</key>
+                    <key>varnish.stat[backend_busy]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -115,7 +115,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_conn&quot;]</key>
+                    <key>varnish.stat[backend_conn]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -158,7 +158,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_fail&quot;]</key>
+                    <key>varnish.stat[backend_fail]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -201,7 +201,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_recycle&quot;]</key>
+                    <key>varnish.stat[backend_recycle]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -244,7 +244,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_req&quot;]</key>
+                    <key>varnish.stat[backend_req]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -287,7 +287,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_retry&quot;]</key>
+                    <key>varnish.stat[backend_retry]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -330,7 +330,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_reuse&quot;]</key>
+                    <key>varnish.stat[backend_reuse]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -373,7 +373,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.backend_unhealthy&quot;]</key>
+                    <key>varnish.stat[backend_unhealthy]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -416,7 +416,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.bans&quot;]</key>
+                    <key>varnish.stat[bans]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -459,7 +459,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.bans_lurker_obj_killed&quot;]</key>
+                    <key>varnish.stat[bans_lurker_obj_killed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -502,7 +502,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.bans_obj_killed&quot;]</key>
+                    <key>varnish.stat[bans_obj_killed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -545,7 +545,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.busy_killed&quot;]</key>
+                    <key>varnish.stat[busy_killed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -588,7 +588,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.busy_sleep&quot;]</key>
+                    <key>varnish.stat[busy_sleep]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -631,7 +631,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.busy_wakeup&quot;]</key>
+                    <key>varnish.stat[busy_wakeup]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -674,7 +674,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.cache_hit&quot;]</key>
+                    <key>varnish.stat[cache_hit]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -717,7 +717,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.cache_hitpass&quot;]</key>
+                    <key>varnish.stat[cache_hitpass]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -760,7 +760,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.cache_miss&quot;]</key>
+                    <key>varnish.stat[cache_miss]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -803,7 +803,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.client_req&quot;]</key>
+                    <key>varnish.stat[client_req]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -846,7 +846,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.client_req_400&quot;]</key>
+                    <key>varnish.stat[client_req_400]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -889,7 +889,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.client_req_417&quot;]</key>
+                    <key>varnish.stat[client_req_417]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -932,7 +932,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.esi_errors&quot;]</key>
+                    <key>varnish.stat[esi_errors]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -975,7 +975,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.esi_warnings&quot;]</key>
+                    <key>varnish.stat[esi_warnings]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1018,7 +1018,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_1xx&quot;]</key>
+                    <key>varnish.stat[fetch_1xx]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1061,7 +1061,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_204&quot;]</key>
+                    <key>varnish.stat[fetch_204]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1104,7 +1104,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_304&quot;]</key>
+                    <key>varnish.stat[fetch_304]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1147,7 +1147,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_bad&quot;]</key>
+                    <key>varnish.stat[fetch_bad]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1190,7 +1190,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_chunked&quot;]</key>
+                    <key>varnish.stat[fetch_chunked]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1233,7 +1233,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_eof&quot;]</key>
+                    <key>varnish.stat[fetch_eof]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1276,7 +1276,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_failed&quot;]</key>
+                    <key>varnish.stat[fetch_failed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1319,7 +1319,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_head&quot;]</key>
+                    <key>varnish.stat[fetch_head]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1362,7 +1362,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_length&quot;]</key>
+                    <key>varnish.stat[fetch_length]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1405,7 +1405,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_none&quot;]</key>
+                    <key>varnish.stat[fetch_none]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1448,7 +1448,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.fetch_no_thread&quot;]</key>
+                    <key>varnish.stat[fetch_no_thread]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1491,7 +1491,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.losthdr&quot;]</key>
+                    <key>varnish.stat[losthdr]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1534,7 +1534,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_backend&quot;]</key>
+                    <key>varnish.stat[n_backend]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1577,7 +1577,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_expired&quot;]</key>
+                    <key>varnish.stat[n_expired]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1620,7 +1620,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_gunzip&quot;]</key>
+                    <key>varnish.stat[n_gunzip]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1663,7 +1663,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_gzip&quot;]</key>
+                    <key>varnish.stat[n_gzip]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1706,7 +1706,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_lru_nuked&quot;]</key>
+                    <key>varnish.stat[n_lru_nuked]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1749,7 +1749,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_object&quot;]</key>
+                    <key>varnish.stat[n_object]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1792,7 +1792,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_objectcore&quot;]</key>
+                    <key>varnish.stat[n_objectcore]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1835,7 +1835,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_objecthead&quot;]</key>
+                    <key>varnish.stat[n_objecthead]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1878,7 +1878,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_obj_purged&quot;]</key>
+                    <key>varnish.stat[n_obj_purged]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1921,7 +1921,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.n_purges&quot;]</key>
+                    <key>varnish.stat[n_purges]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1964,7 +1964,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_closed&quot;]</key>
+                    <key>varnish.stat[sess_closed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2007,7 +2007,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_closed_err&quot;]</key>
+                    <key>varnish.stat[sess_closed_err]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2050,7 +2050,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_conn&quot;]</key>
+                    <key>varnish.stat[sess_conn]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2093,7 +2093,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_drop&quot;]</key>
+                    <key>varnish.stat[sess_drop]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2136,7 +2136,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_dropped&quot;]</key>
+                    <key>varnish.stat[sess_dropped]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2179,7 +2179,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_fail&quot;]</key>
+                    <key>varnish.stat[sess_fail]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2222,7 +2222,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_queued&quot;]</key>
+                    <key>varnish.stat[sess_queued]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2265,7 +2265,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.sess_readahead&quot;]</key>
+                    <key>varnish.stat[sess_readahead]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2308,7 +2308,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_fetch&quot;]</key>
+                    <key>varnish.stat[s_fetch]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2351,7 +2351,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_pass&quot;]</key>
+                    <key>varnish.stat[s_pass]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2394,7 +2394,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_pipe&quot;]</key>
+                    <key>varnish.stat[s_pipe]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2437,7 +2437,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_pipe_hdrbytes&quot;]</key>
+                    <key>varnish.stat[s_pipe_hdrbytes]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2480,7 +2480,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_pipe_in&quot;]</key>
+                    <key>varnish.stat[s_pipe_in]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2523,7 +2523,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_pipe_out&quot;]</key>
+                    <key>varnish.stat[s_pipe_out]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2566,7 +2566,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_req&quot;]</key>
+                    <key>varnish.stat[s_req]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2609,7 +2609,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_req_bodybytes&quot;]</key>
+                    <key>varnish.stat[s_req_bodybytes]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2652,7 +2652,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_req_hdrbytes&quot;]</key>
+                    <key>varnish.stat[s_req_hdrbytes]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2695,7 +2695,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_resp_bodybytes&quot;]</key>
+                    <key>varnish.stat[s_resp_bodybytes]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2738,7 +2738,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_resp_hdrbytes&quot;]</key>
+                    <key>varnish.stat[s_resp_hdrbytes]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2781,7 +2781,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_sess&quot;]</key>
+                    <key>varnish.stat[s_sess]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2824,7 +2824,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.s_synth&quot;]</key>
+                    <key>varnish.stat[s_synth]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2867,7 +2867,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.threads&quot;]</key>
+                    <key>varnish.stat[threads]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2910,7 +2910,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.threads_created&quot;]</key>
+                    <key>varnish.stat[threads_created]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2953,7 +2953,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.threads_destroyed&quot;]</key>
+                    <key>varnish.stat[threads_destroyed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -2996,7 +2996,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.threads_failed&quot;]</key>
+                    <key>varnish.stat[threads_failed]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -3039,7 +3039,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.threads_limited&quot;]</key>
+                    <key>varnish.stat[threads_limited]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -3082,7 +3082,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.thread_queue_len&quot;]</key>
+                    <key>varnish.stat[thread_queue_len]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -3125,7 +3125,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MAIN.uptime&quot;]</key>
+                    <key>varnish.stat[uptime]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -3168,7 +3168,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>varnish.stat[&quot;MGT.uptime&quot;]</key>
+                    <key>varnish.stat[MGT.uptime]</key>
                     <delay>0</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -3246,7 +3246,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.bereq_bodybytes&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.bereq_bodybytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3289,7 +3289,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.bereq_hdrbytes&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.bereq_hdrbytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3332,7 +3332,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.beresp_bodybytes&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.beresp_bodybytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3375,7 +3375,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.beresp_hdrbytes&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.beresp_hdrbytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3418,7 +3418,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.conn&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.conn]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3461,7 +3461,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.happy&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.happy]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3522,7 +3522,7 @@
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
-                            <params>band(&quot;varnish.stat[\&quot;VBE.{#ID}.happy\&quot;]&quot;,#1,1)</params>
+                            <params>band(varnish.stat[\VBE.{#ID}.happy\],#1,1)</params>
                             <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -3547,7 +3547,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.pipe_hdrbytes&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.pipe_hdrbytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3590,7 +3590,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.pipe_in&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.pipe_in]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3633,7 +3633,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.pipe_out&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.pipe_out]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3676,7 +3676,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;VBE.{#ID}.req&quot;]</key>
+                            <key>varnish.stat[VBE.{#ID}.req]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -3743,7 +3743,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.beresp_hdrbytes&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.beresp_hdrbytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -3755,7 +3755,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.beresp_bodybytes&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.beresp_bodybytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -3767,7 +3767,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.pipe_in&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.pipe_in]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3799,7 +3799,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.bereq_hdrbytes&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.bereq_hdrbytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -3811,7 +3811,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.bereq_bodybytes&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.bereq_bodybytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -3823,7 +3823,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.pipe_hdrbytes&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.pipe_hdrbytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -3835,7 +3835,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.pipe_out&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.pipe_out]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3867,7 +3867,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.conn&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.conn]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3931,7 +3931,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;VBE.{#ID}.req&quot;]</key>
+                                        <key>varnish.stat[VBE.{#ID}.req]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3978,7 +3978,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;SMA.{#ID}.c_fail&quot;]</key>
+                            <key>varnish.stat[SMA.{#ID}.c_fail]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -4021,7 +4021,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;SMA.{#ID}.g_bytes&quot;]</key>
+                            <key>varnish.stat[SMA.{#ID}.g_bytes]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -4064,7 +4064,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>varnish.stat[&quot;SMA.{#ID}.g_space&quot;]</key>
+                            <key>varnish.stat[SMA.{#ID}.g_space]</key>
                             <delay>0</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -4131,7 +4131,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;SMA.{#ID}.c_fail&quot;]</key>
+                                        <key>varnish.stat[SMA.{#ID}.c_fail]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -4163,7 +4163,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;SMA.{#ID}.g_bytes&quot;]</key>
+                                        <key>varnish.stat[SMA.{#ID}.g_bytes]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -4175,7 +4175,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Template App Varnish Cache</host>
-                                        <key>varnish.stat[&quot;SMA.{#ID}.g_space&quot;]</key>
+                                        <key>varnish.stat[SMA.{#ID}.g_space]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -4222,7 +4222,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_recycle&quot;]</key>
+                        <key>varnish.stat[backend_recycle]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4234,7 +4234,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_reuse&quot;]</key>
+                        <key>varnish.stat[backend_reuse]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4246,7 +4246,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_retry&quot;]</key>
+                        <key>varnish.stat[backend_retry]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4258,7 +4258,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_busy&quot;]</key>
+                        <key>varnish.stat[backend_busy]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4270,7 +4270,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_unhealthy&quot;]</key>
+                        <key>varnish.stat[backend_unhealthy]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4282,7 +4282,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_fail&quot;]</key>
+                        <key>varnish.stat[backend_fail]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4314,7 +4314,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_conn&quot;]</key>
+                        <key>varnish.stat[backend_conn]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4346,7 +4346,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_fetch&quot;]</key>
+                        <key>varnish.stat[s_fetch]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4358,7 +4358,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_head&quot;]</key>
+                        <key>varnish.stat[fetch_head]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4370,7 +4370,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_length&quot;]</key>
+                        <key>varnish.stat[fetch_length]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4382,7 +4382,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_chunked&quot;]</key>
+                        <key>varnish.stat[fetch_chunked]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4394,7 +4394,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_eof&quot;]</key>
+                        <key>varnish.stat[fetch_eof]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4406,7 +4406,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_none&quot;]</key>
+                        <key>varnish.stat[fetch_none]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4418,7 +4418,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_1xx&quot;]</key>
+                        <key>varnish.stat[fetch_1xx]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4430,7 +4430,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_204&quot;]</key>
+                        <key>varnish.stat[fetch_204]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4442,7 +4442,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_304&quot;]</key>
+                        <key>varnish.stat[fetch_304]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4454,7 +4454,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_bad&quot;]</key>
+                        <key>varnish.stat[fetch_bad]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4466,7 +4466,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_failed&quot;]</key>
+                        <key>varnish.stat[fetch_failed]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4478,7 +4478,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.fetch_no_thread&quot;]</key>
+                        <key>varnish.stat[fetch_no_thread]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4510,7 +4510,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_backend&quot;]</key>
+                        <key>varnish.stat[n_backend]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4542,7 +4542,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.backend_req&quot;]</key>
+                        <key>varnish.stat[backend_req]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4574,7 +4574,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.cache_hit&quot;]</key>
+                        <key>varnish.stat[cache_hit]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4586,7 +4586,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.cache_hitpass&quot;]</key>
+                        <key>varnish.stat[cache_hitpass]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4598,7 +4598,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.cache_miss&quot;]</key>
+                        <key>varnish.stat[cache_miss]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4642,7 +4642,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_req&quot;]</key>
+                        <key>varnish.stat[s_req]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4654,7 +4654,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.client_req_400&quot;]</key>
+                        <key>varnish.stat[client_req_400]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4666,7 +4666,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.client_req_417&quot;]</key>
+                        <key>varnish.stat[client_req_417]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4698,7 +4698,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.busy_sleep&quot;]</key>
+                        <key>varnish.stat[busy_sleep]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4710,7 +4710,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.busy_wakeup&quot;]</key>
+                        <key>varnish.stat[busy_wakeup]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4722,7 +4722,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.busy_killed&quot;]</key>
+                        <key>varnish.stat[busy_killed]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4754,7 +4754,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_req_hdrbytes&quot;]</key>
+                        <key>varnish.stat[s_req_hdrbytes]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4766,7 +4766,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_req_bodybytes&quot;]</key>
+                        <key>varnish.stat[s_req_bodybytes]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4778,7 +4778,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_pipe_hdrbytes&quot;]</key>
+                        <key>varnish.stat[s_pipe_hdrbytes]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4790,7 +4790,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_pipe_in&quot;]</key>
+                        <key>varnish.stat[s_pipe_in]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4822,7 +4822,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_resp_hdrbytes&quot;]</key>
+                        <key>varnish.stat[s_resp_hdrbytes]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4834,7 +4834,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_resp_bodybytes&quot;]</key>
+                        <key>varnish.stat[s_resp_bodybytes]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4846,7 +4846,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_pipe_out&quot;]</key>
+                        <key>varnish.stat[s_pipe_out]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4878,7 +4878,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_pass&quot;]</key>
+                        <key>varnish.stat[s_pass]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4910,7 +4910,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.client_req&quot;]</key>
+                        <key>varnish.stat[client_req]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4942,7 +4942,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_synth&quot;]</key>
+                        <key>varnish.stat[s_synth]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4974,7 +4974,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_sess&quot;]</key>
+                        <key>varnish.stat[s_sess]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4986,7 +4986,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_closed&quot;]</key>
+                        <key>varnish.stat[sess_closed]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4998,7 +4998,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_closed_err&quot;]</key>
+                        <key>varnish.stat[sess_closed_err]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5010,7 +5010,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_drop&quot;]</key>
+                        <key>varnish.stat[sess_drop]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5022,7 +5022,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_dropped&quot;]</key>
+                        <key>varnish.stat[sess_dropped]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5034,7 +5034,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_fail&quot;]</key>
+                        <key>varnish.stat[sess_fail]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5046,7 +5046,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_queued&quot;]</key>
+                        <key>varnish.stat[sess_queued]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5058,7 +5058,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_readahead&quot;]</key>
+                        <key>varnish.stat[sess_readahead]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5090,7 +5090,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.s_pipe&quot;]</key>
+                        <key>varnish.stat[s_pipe]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5122,7 +5122,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.sess_conn&quot;]</key>
+                        <key>varnish.stat[sess_conn]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5154,7 +5154,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.thread_queue_len&quot;]</key>
+                        <key>varnish.stat[thread_queue_len]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5186,7 +5186,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.esi_warnings&quot;]</key>
+                        <key>varnish.stat[esi_warnings]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5198,7 +5198,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.esi_errors&quot;]</key>
+                        <key>varnish.stat[esi_errors]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5230,7 +5230,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_gzip&quot;]</key>
+                        <key>varnish.stat[n_gzip]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5242,7 +5242,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_gunzip&quot;]</key>
+                        <key>varnish.stat[n_gunzip]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5274,7 +5274,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.losthdr&quot;]</key>
+                        <key>varnish.stat[losthdr]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5306,7 +5306,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.bans&quot;]</key>
+                        <key>varnish.stat[bans]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5338,7 +5338,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_purges&quot;]</key>
+                        <key>varnish.stat[n_purges]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5370,7 +5370,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_expired&quot;]</key>
+                        <key>varnish.stat[n_expired]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5382,7 +5382,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_lru_nuked&quot;]</key>
+                        <key>varnish.stat[n_lru_nuked]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5394,7 +5394,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_obj_purged&quot;]</key>
+                        <key>varnish.stat[n_obj_purged]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5406,7 +5406,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.bans_obj_killed&quot;]</key>
+                        <key>varnish.stat[bans_obj_killed]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5418,7 +5418,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.bans_lurker_obj_killed&quot;]</key>
+                        <key>varnish.stat[bans_lurker_obj_killed]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5450,7 +5450,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_object&quot;]</key>
+                        <key>varnish.stat[n_object]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5462,7 +5462,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_objecthead&quot;]</key>
+                        <key>varnish.stat[n_objecthead]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5474,7 +5474,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.n_objectcore&quot;]</key>
+                        <key>varnish.stat[n_objectcore]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5506,7 +5506,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.threads_created&quot;]</key>
+                        <key>varnish.stat[threads_created]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5518,7 +5518,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.threads_failed&quot;]</key>
+                        <key>varnish.stat[threads_failed]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5530,7 +5530,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.threads_limited&quot;]</key>
+                        <key>varnish.stat[threads_limited]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5542,7 +5542,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.threads_destroyed&quot;]</key>
+                        <key>varnish.stat[threads_destroyed]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5574,7 +5574,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.threads&quot;]</key>
+                        <key>varnish.stat[threads]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -5606,7 +5606,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MAIN.uptime&quot;]</key>
+                        <key>varnish.stat[uptime]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -5618,7 +5618,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App Varnish Cache</host>
-                        <key>varnish.stat[&quot;MGT.uptime&quot;]</key>
+                        <key>varnish.stat[MGT.uptime]</key>
                     </item>
                 </graph_item>
             </graph_items>
